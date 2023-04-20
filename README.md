@@ -30,6 +30,8 @@ In this section, I will preprocess the data for analysis.
 i. Missing values will be deleted or imputed </br>
 ii. Outliers will be replaced and </br>
 iii. Invalid data will be removed </br>
+iv. Duplicate data will be dropped </br>
+v. Imbalanced dataset will be balanced </br>
 ## Data Analysis
 This section aims to analyze the data using various analytical techniques and review the outcome. It starts with the determination of the type of problems, where we select the machine learning techniques such as Classification, Regression etc.
 ## Building model
@@ -37,6 +39,27 @@ This section trains and tests various classification models on data, split by ho
 ## Hyperparameter Tuning
 The selected model is optimized by hyperparameter tuning to provide the best result for unseen data. 
 ## Conclusions
-The model is tested on unseen data. In addition, some business questions are answered to check model usability in real-world scenarios.
+I build multiple classification models to provide a solution for the problem statement. 
+1. On evaluating the performance of all models, KNN, Decision Tree, and Random Forest performed better than Logistic Regression.</br>
+
+### Logistic Regression
+![image](https://user-images.githubusercontent.com/71493898/233459800-dfe6749b-1bfe-427c-a986-77e02dffc596.png)
+### KNN
+![image](https://user-images.githubusercontent.com/71493898/233460969-421b52a1-2f35-455f-80a0-abadc3935b09.png)
+### Decision Tree
+![DT](https://user-images.githubusercontent.com/71493898/233461416-e5e6d3b6-cde5-44ae-9735-ad1872d4482f.png)
+### Random Forest
+![RF](https://user-images.githubusercontent.com/71493898/233461467-7a70fcec-b54b-4e6f-b56e-9bac7d0b5cbf.png)
+
+### ROC
+![image](https://user-images.githubusercontent.com/71493898/233461626-d198d7ea-635e-4b3d-8e7e-c15492e48308.png)
+
+
+2. For a problem statement like this, it is essential to have minimum false negatives (i.e., Type II error) so that no casualties occurred.
+Looking at the confusion matrix of individual models, I chose Random Forest Classifier as it was able to detect smoke accurately. </br>
+![image](https://user-images.githubusercontent.com/71493898/233461867-67efd129-5772-4c79-86ed-103635f6f08f.png)
+![image](https://user-images.githubusercontent.com/71493898/233461909-20a8a0b6-ba6b-4a10-a455-0a1afba1cf41.png)
+![image](https://user-images.githubusercontent.com/71493898/233461954-f7c57bd2-5a4a-4fc8-9aa3-199e5d0c280e.png)
+
 
 
